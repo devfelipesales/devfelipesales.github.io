@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Telefone, endereço, local e e-mail de contato do BikCraft. Redes Sociais como facebook, instagram e youtube do Bikcraft ">
+
+  <title>Contato | Bikcraft</title>
+
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="./css/style.css" as="style">
+  <link rel="preload" href="./css/contato/contato.css" as="style">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/contato/contato.css">
+  <script src="./paginas-componentes/footer.js" type="text/javascript" defer></script>
+  <script src="./paginas-componentes/header.js" type="text/javascript" defer></script>
+  <script src="./js/script.js" type="text/javascript" defer></script>
+  <!-- Adiciona classe JS para animações que dependam do JS em caso de desativarem o JavaScript -->
+  <script>document.documentElement.classList.add("js");</script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&family=Poppins:wght@400;500;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+
+<body id="contato">
+  <header-component></header-component>
+  <section class="bg-color-c11" aria-label="">
+    <div class="container contato-header">
+      <p class="font-2-l-b color-c5">Resposta em até 24h</p>
+      <h1 class="font-1-xxl color-c0">nosso contato<span class="color-p1">.</span></h1>
+    </div>
+  </section>
+
+  <main class="bg-color-c11">
+    <div class="contato-main container">
+      <section class="contato-info bg-color-c12" aria-label="Endereço">
+        <span class="font-1-s color-c0">Loja Online</span>
+        <div class="contato-endereco font-2-s color-c4">
+          <img src="./img/icones/local.svg" alt="" width="20" height="20">
+          <p>Rua Ali Perto, 35</p>
+          <p>Rio de Janeiro - RJ</p>
+          <p>Brasil - Terra - Vita Láctea</p>
+        </div>
+        <!-- <address> Poderia utilizar essa Tag -->
+        <div class="contato-email font-2-s color-c4">
+          <img src="./img/icones/email.svg" alt="" width="20" height="20">
+          <p>vendas@bikcraft.com</p>
+          <p>assistencia@bikcraft.com</p>
+        </div>
+        <div class="contato-fone font-2-s color-c4">
+          <img src="./img/icones/telefone.svg" alt="" width="20" height="20">
+          <p>+55 21 9999-9999</p>
+        </div>
+        <!-- </address> -->
+        <div class="contato-redes">
+          <a href="./"><img src="./img/redes/instagram-p.svg" alt="" width="32" height="32"></a>
+          <a href="./"><img src="./img/redes/facebook-p.svg" alt="" width="32" height="32"></a>
+          <a href="./"><img src="./img/redes/youtube-p.svg" alt="" width="32" height="32"></a>
+        </div>
+      </section>
+      <div class="contato-form">
+        <form action="">
+          <div>
+            <label class="font-1-s color-c11" for="nome">Nome</label><br>
+            <input class="font-2-s color-c7" type="text" id="nome" name="nome" value="" placeholder="Seu nome"><br>
+          </div>
+          <div>
+            <label class="font-1-s color-c11" for="fone">Telefone</label><br>
+            <input class="font-2-s color-c7" type="tel" id="fone" name="fone" value="" placeholder="(XX) 9999-9999"><br>
+          </div>
+          <div>
+            <label class="font-1-s color-c11" for="email">Email</label><br>
+            <input class="font-2-s color-c7" type="email" id="email" name="email" value="" placeholder="contato@email.com"><br>
+          </div>
+          <div>
+            <label class="font-1-s color-c11" for="mensagem">Mensagem</label><br>
+            <textarea class="font-2-s color-c7" id="mensagem" name="mensagem" rows="6" cols="">O que você precisa? </textarea>
+          </div>
+          <!-- <input class="style-btn font-1-m" type="submit" value="Enviar Mensagem"> -->
+          <button type="submit" class="style-btn font-1-m">Enviar Mensagem</button>
+        </form>
+      </div>
+    </div>
+  </main>
+  <article class="bg-lojas" aria-labelledby="titulo_lojas">
+    <div class="lojas container" aria-labelledby="titulo_lojas">
+      <h2 id="titulo_lojas" class="font-1-xxl color-c11">lojas locais<span class="color-p1">.</span></h2>
+      <div class="lojas-cidades">
+        <div class="lojas-cidades-rj">
+          <div class="img-cidade">
+            <img src="./img/lojas/rj.jpg" alt="" width="1120" height="520">
+          </div>
+          <div class="lojas-cidades-detalhes">
+            <h3 class="font-1-xl color-c12">Rio de Janeiro</h3>
+            <div class="lojas-cidades-info">
+              <div class="font-2-m color-c8">
+                <p>Rua Ali Perto, 25</p>
+                <p>Rio de Janeiro, RJ</p>
+              </div>
+              <div class="font-2-m color-c8">
+                <p>rio@bikcraft.com</p>
+                <p>21 9999-9999</p>
+              </div>
+            </div>
+            <h4 class="font-2-xs-m color-c12">08-18h de seg à dom</h4>
+          </div>
+        </div>
+        <div class="lojas-cidades-sp">
+          <div class="img-cidade">
+            <img src="./img/lojas/sp.jpg" alt="" width="1120" height="520">
+          </div>
+          <div class="lojas-cidades-detalhes">
+            <h3 class="font-1-xl color-c12">São Paulo</h3>
+            <div class="lojas-cidades-info">
+              <div class="font-2-m color-c8">
+                <p>Rua Ali Perto, 25</p>
+                <p>São Paulo, SP</p>
+              </div>
+              <div class="font-2-m color-c8">
+                <p>sp@bikcraft.com</p>
+                <p>11 9999-9999</p>
+              </div>
+            </div>
+            <h4 class="font-2-xs-m color-c12">08-18h de seg à dom</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+  <footer-component></footer-component>
+</body>
+
+</html>

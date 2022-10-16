@@ -1,0 +1,29 @@
+@import url(global.css);
+@import url(utilitario.css);
+@import url(animacao.css);
+
+/* Header */
+@import url(header.css);
+
+/* Footer */
+@import url(footer.css);
+
+/* Home
+@import url(./home/main.css);
+@import url(./home/bicicletas.css);
+@import url(./home/tecnologia.css);
+@import url(./home/parceiros.css);
+@import url(./home/depoimento.css);
+@import url(./home/seguros.css);
+
+/* Bicicletas */
+/* @import url(./bicicletas/bicicletas.css);  */
+
+/* Termos e Condições */
+/* @import url(./termos-e-condicoes/termos-e-condicoes.css); */
+
+/* Seguros */
+/* @import url(./seguros/seguros.css); */
+
+/* Bicicletas-Info */
+/* @import url(./bicicletas-info/bicicletas-info.css); */

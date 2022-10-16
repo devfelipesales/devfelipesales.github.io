@@ -1,0 +1,61 @@
+/* Alterações do header nesta página específica */
+/* Menu Seguros "sublinhado" */
+.header .menu li:nth-child(2) a::after {
+  width: 100%;
+}
+/* Fim alterações header */
+
+.bg-seguros {
+  padding-bottom: 20px;
+}
+
+.seguros-lista {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-40px);
+  justify-content: center;
+  align-items: center;
+  margin-top: var(--spacing-60px);
+}
+
+.seguros-lista-info {
+  display: grid;
+  gap: var(--spacing-32px);
+  padding: 32px 32px 32px 60px;
+  background-color: var(--secondary-color-c12);
+  border-radius: 4px;
+  flex: 1;
+}
+
+.seguros-lista-info .seguros-lista-info-detalhes {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  height: fit-content;
+}
+
+.seguros-lista-info .preco {
+  text-align: right;
+}
+.seguros-lista-info .mensal {
+  grid-column: 2;
+  text-align: right;
+}
+
+.seguros-lista-info ul {
+  list-style-image: url(../../img/icones/lista.svg);
+  display: grid;
+  gap: var(--spacing-20px);
+}
+
+.seguros-lista-info a {
+  place-self: flex-start;
+}
+
+@media (max-width: 799.8px) {
+  .seguros-lista {
+    flex-direction: column;
+    align-items: normal;
+    max-width: 600px;
+    margin-top: 0px;
+  }
+}

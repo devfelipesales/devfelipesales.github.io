@@ -1,0 +1,71 @@
+main {
+  /* efeito de imagem "quebrada" no grid */
+  box-shadow: inset 0 -120px var(--secondary-color-c0);
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: var(--spacing-20px);
+}
+
+.main-info {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: var(--spacing-20px);
+  padding-bottom: var(--spacing-120px);
+}
+
+.main-info h1 {
+  max-width: 14ch;
+}
+
+.main-info p {
+  max-width: 35ch;
+}
+
+.main-img {
+  height: 100%;
+}
+
+.main-img img {
+  border-radius: 4px;
+  object-fit: cover;
+  object-position: top right;
+  height: 100%;
+  width: 100%;
+}
+
+@media (max-width: 799.8px) {
+  .main {
+    grid-template-columns: 1fr;
+    align-items: initial;
+    justify-items: center;
+    gap: var(--spacing-60px);
+  }
+
+  .main-info {
+    padding-bottom: 0px;
+  }
+
+  .main-img {
+    height: 100%;
+    width: 100%;
+  }
+
+  .main-img img {
+    object-position: center;
+  }
+}
+
+@media (max-width: 479.8px) {
+  main {
+    box-shadow: inset 0 -80px var(--secondary-color-c0);
+  }
+  .main {
+    gap: var(--spacing-40px);
+  }
+}

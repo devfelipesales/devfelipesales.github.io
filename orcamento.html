@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Página de solicitação de orçamento e seguro do Bikcraft ">
+
+  <title>Orçamento | Bikcraft</title>
+
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="./css/style.css" as="style">
+  <link rel="preload" href="./css/orcamento/orcamento.css" as="style">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/orcamento/orcamento.css">
+  <script src="./paginas-componentes/footer.js" type="text/javascript" defer></script>
+  <script src="./paginas-componentes/header.js" type="text/javascript" defer></script>
+  <script src="./js/script.js" type="text/javascript" defer></script>
+  <!-- Adiciona classe JS para animações que dependam do JS em caso de desativarem o JavaScript -->
+  <script>document.documentElement.classList.add("js");</script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&family=Poppins:wght@400;500;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header-component></header-component>
+  <section class="bg-orcamento bg-color-c11" aria-labelledby="titulo-orcamento">
+    <div class="container orcamento-header">
+      <p class="font-2-l-b color-c5">Cotações no seu email</p>
+      <h1 id="titulo-orcamento" class="font-1-xxl color-c0">solicite um orçamento<span class="color-p1">.</span></h1>
+    </div>
+  </section>
+
+  <main>
+
+    <article class="bg-orcamento-seguro">
+      <form class="container form-container-orcamento-seguro" action="" target="_self" method="post">
+
+        <div class="selecao-orcamento-seguro">
+          <div>
+            <h4 class="font-1-xs color-c5">bikcraft ou seguro?</h4>
+            <div class="div-form-orcamento-seguro font-1-s color-c4">
+              <div>
+                <label for="bikcraft_radio">
+                  <input type="radio" name="escolha" id="bikcraft_radio" value="BIKCRAFT">
+                  Bikcraft
+                </label>
+              </div>
+              <div>
+                <label for="seguro_radio">
+                  <input type="radio" name="escolha" id="seguro_radio" value="SEGURO">
+                  Seguro
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="container-escolha-bicicleta">
+            <h4 class="font-1-xs color-c5">escolha a sua:</h4>
+            <div class="div-form-escolha-bicicleta font-1-s color-c4">
+              <div>
+                <label for="nimbus_radio">
+                  <input type="radio" name="escolha-bicicleta" id="nimbus_radio" value="NIMBUS">
+                  Nimbus Stark <span class="color-c11 preco-bicicleta" id="preco-nimbus">R$ 4999</span>
+                </label>
+              </div>
+              <div class="container_bicicletas" id="nimbus">
+                <img src="./img/bicicletas/nimbus.jpg" alt="" width="1120" height="680">
+                <ul class="info_bicicleta font-1-xxs color-c8">
+                  <li><img src="./img/icones/eletrica.svg" alt="" width="16" height="16">Motor Elétrico</li>
+                  <li><img src="./img/icones/carbono.svg" alt="" width="16" height="16">Fibra de Carbono</li>
+                  <li><img src="./img/icones/velocidade.svg" alt="" width="16" height="16">50 km/h</li>
+                  <li><img src="./img/icones/rastreador.svg" alt="" width="16" height="16">Rastreador</li>
+                </ul>
+              </div>
+              <div>
+                <label for="magic_radio">
+                  <input type="radio" name="escolha-bicicleta" id="magic_radio" value="MAGIC">
+                  Magic Might <span class="color-c11 preco-bicicleta" id="preco-magic">R$ 2499</span>
+                </label>
+              </div>
+              <div class="container_bicicletas" id="magic">
+                <img src="./img/bicicletas/magic.jpg" alt="" width="1120" height="680">
+                <ul class="info_bicicleta font-1-xxs color-c8">
+                  <li><img src="./img/icones/eletrica.svg" alt="" width="16" height="16">Motor Elétrico</li>
+                  <li><img src="./img/icones/carbono.svg" alt="" width="16" height="16">Fibra de Carbono</li>
+                  <li><img src="./img/icones/velocidade.svg" alt="" width="16" height="16">45 km/h</li>
+                  <li><img src="./img/icones/rastreador.svg" alt="" width="16" height="16">Rastreador</li>
+                </ul>
+              </div>
+              <div>
+                <label for="nebula_radio">
+                  <input type="radio" name="escolha-bicicleta" id="nebula_radio" value="NEBULA">
+                  Nebula Stark <span class="color-c11 preco-bicicleta" id="preco-nebula">R$ 3999</span>
+                </label>
+              </div>
+              <div class="container_bicicletas" id="nebula">
+                <img src="./img/bicicletas/nebula.jpg" alt="" width="1120" height="680">
+                <ul class="info_bicicleta font-1-xxs color-c8">
+                  <li><img src="./img/icones/eletrica.svg" alt="" width="16" height="16">Motor Elétrico</li>
+                  <li><img src="./img/icones/carbono.svg" alt="" width="16" height="16">Fibra de Carbono</li>
+                  <li><img src="./img/icones/velocidade.svg" alt="" width="16" height="16">40 km/h</li>
+                  <li><img src="./img/icones/rastreador.svg" alt="" width="16" height="16">Rastreador</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="container-escolha-plano">
+            <h4 class="font-1-xs color-c5">escolha o plano:</h4>
+            <div class="div-form-escolha-plano font-1-s color-c4">
+              <div>
+                <label for="prata_radio">
+                  <input type="radio" name="escolha-plano" id="prata_radio" value="PRATA">
+                  Prata <span class="color-c11 preco-plano" id="preco-prata">R$ 199</span>
+                </label>
+              </div>
+              <div>
+                <label for="ouro_radio">
+                  <input type="radio" name="escolha-plano" id="ouro_radio" value="OURO">
+                  Ouro <span class="color-c11 preco-plano" id="preco-ouro">R$ 299</span>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="orcamento-form">
+          <div class="dados-pessoais">
+            <h4 class="font-1-xs color-c9 max-col-width">dados pessoais</h4>
+            <div>
+              <label class="font-1-s color-c11" for="nome">Nome</label><br>
+              <input class="font-2-s color-c11" type="text" name="nome" id="nome">
+            </div>
+            <div>
+              <label class="font-1-s color-c11" for="sobrenome">Sobrenome</label><br>
+              <input class="font-2-s color-c11" type="text" name="sobrenome" id="sobrenome">
+            </div>
+            <div class="max-col-width">
+              <label class="font-1-s color-c11" for="cpf">CPF</label><br>
+              <input class="font-2-s color-c11" type="text" name="cpf" id="cpf" placeholder="000.000.000-00">
+            </div>
+            <div class="max-col-width">
+              <label class="font-1-s color-c11" for="email">Email</label><br>
+              <input class="font-2-s color-c11" type="email" name="email" id="email">
+            </div>
+          </div>
+          <div class="entrega">
+            <h4 class="font-1-xs color-c9">entrega</h4>
+            <div>
+              <label class="font-1-s color-c11" for="cep">CEP</label><br>
+              <input class="font-2-s color-c11" type="text" name="cep" id="cep">
+            </div>
+            <div>
+              <label class="font-1-s color-c11" for="numero">Número</label><br>
+              <input class="font-2-s color-c11" type="text" name="numero" id="numero">
+            </div>
+            <div>
+              <label class="font-1-s color-c11" for="logradouro">Logradouro</label><br>
+              <input class="font-2-s color-c11" type="text" name="logradouro" id="logradouro">
+            </div>
+            <div>
+              <label class="font-1-s color-c11" for="bairro">Bairro</label><br>
+              <input class="font-2-s color-c11" type="text" name="bairro" id="bairro">
+            </div>
+            <div>
+              <label class="font-1-s color-c11" for="cidade">Cidade</label><br>
+              <input class="font-2-s color-c11" type="text" name="cidade" id="cidade">
+            </div>
+            <div>
+              <label class="font-1-s color-c11" for="estado">Estado</label><br>
+              <input class="font-2-s color-c11" type="text" name="estado" id="estado">
+            </div>
+          </div>
+          <button type="submit" id="btn-orcamento" class="style-btn font-1-m">Solicitar Orçamento</button>
+        </div>
+      </form>
+    </article>
+  </main>
+  <footer-component></footer-component>
+</body>
+
+</html>

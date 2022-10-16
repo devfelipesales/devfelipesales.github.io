@@ -1,0 +1,147 @@
+/* Alterações do header nesta página específica */
+/* Menu bicicletas "sublinhado" */
+.header .menu li:first-child a::after {
+  width: 100%;
+}
+/* Fim alterações header */
+
+main {
+  padding: 90px 0;
+}
+
+.bicicletas-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+/* Dá pra fazer o efeito com box shadow e com Linear Gradient */
+/* Na horizontal é melhor fazer com Linear */
+.bicicleta-lista > li:nth-child(2) {
+  /* Com box shadow: */
+  /* background-color: var(--secondary-color-c11);
+  box-shadow: inset 360px 0 var(--secondary-color-c0); */
+
+  /* Com Linear */
+  /* Por padrão, o linear é de cima para baixo. Nesse caso, precisa usar o to right  */
+  /*  Poderia iniciar o color-c11 no 25%, ou no 0% é como ficasse por baixo */
+  background: linear-gradient(
+    to right,
+    Var(--secondary-color-c0) 25%,
+    var(--secondary-color-c11) 0%
+  );
+}
+
+.bicicletas-img {
+  position: relative;
+}
+
+.bicicletas-img img {
+  object-fit: cover;
+  object-position: center;
+  height: 100%;
+  border-radius: 4px;
+}
+
+.bicicletas-img span {
+  background-color: var(--secondary-color-c12);
+  padding: 12px;
+  border-radius: 4px 0px 0px 4px;
+  position: absolute;
+  top: 16px;
+  right: 0;
+}
+
+.bicicletas-info {
+  display: grid;
+  gap: 8px;
+  place-content: start;
+}
+
+.bicicletas-info p {
+  margin-top: 12px;
+}
+
+.bicicletas-info h2::before {
+  content: "";
+  width: 12px;
+  height: 8px;
+  background-color: var(--primary-color-p1);
+  display: block;
+}
+
+.bicicletas-detalhes {
+  margin-top: 24px;
+}
+
+.bicicletas-detalhes li {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 8px;
+}
+
+.bicicletas-detalhes li + li {
+  margin-top: 8px;
+}
+
+.bicicleta-link {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.bicicleta-link a {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.bicicleta-link img {
+  width: 16px;
+  height: 8px;
+}
+
+.bicicleta-link a:hover img {
+  transform: translateX(4px);
+}
+
+@media (max-width: 959.8px) {
+  .bicicletas-box {
+    grid-template-columns: 2fr 1fr;
+  }
+  .bicicletas-img img {
+    object-position: right;
+  }
+}
+
+@media (max-width: 799.8px) {
+  .bicicletas-box {
+    grid-template-columns: 1fr;
+  }
+
+  .bicicleta-lista > li:nth-child(2) {
+    background: var(--secondary-color-c11);
+  }
+
+  main {
+    padding: 40px 0;
+  }
+}
+
+@media (max-width: 479.8px) {
+  .container {
+    padding: 20px 10px;
+  }
+  .bicicletas-img span {
+    top: 5px;
+    padding: 8px;
+  }
+}
+
+@media (max-width: 359.8px) {
+  .bicicleta-link {
+    flex-direction: column;
+    align-content: start;
+  }
+}

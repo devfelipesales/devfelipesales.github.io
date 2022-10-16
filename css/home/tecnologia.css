@@ -1,0 +1,134 @@
+.bg-tecnologia {
+  box-shadow: inset 0px -120px var(--secondary-color-c0),
+    inset 0px 120px var(--secondary-color-c0);
+  margin-top: var(--spacing-120px);
+}
+
+.tecnologia {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: var(--spacing-60px) var(--spacing-40px);
+}
+
+.tecnologia-info {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+  padding-top: var(--spacing-120px);
+}
+
+.tecnologia-info > span {
+  padding-top: var(--spacing-40px);
+}
+
+.tecnologia-info h2 {
+  max-width: 14ch;
+  margin-top: var(--spacing-12px);
+}
+
+.tecnologia-info p {
+  max-width: 40ch;
+  margin-top: var(--spacing-32px);
+}
+
+.tecnologia-info a {
+  text-transform: uppercase;
+  border-bottom: 4px solid var(--primary-color-p1);
+  align-self: flex-start;
+  margin-top: var(--spacing-20px);
+}
+
+.tecnologia-info a:hover {
+  color: var(--primary-color-p3);
+  border-bottom-color: var(--primary-color-p3);
+}
+
+.tecnologia-detalhes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-self: flex-start;
+  gap: var(--spacing-40px);
+  padding-bottom: var(--spacing-120px);
+}
+
+.tecnologia-detalhes p {
+  max-width: 30ch;
+}
+.tecnologia-detalhes div {
+  display: grid;
+  gap: 4px;
+}
+
+.img-tecnologia {
+  grid-row: span 2;
+  height: 100%;
+}
+
+.img-tecnologia img {
+  object-fit: cover;
+  object-position: left;
+  height: 100%;
+}
+
+@media (max-width: 799.8px) {
+  .tecnologia {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-20px);
+  }
+
+  .img-tecnologia img {
+    display: none;
+  }
+
+  .bg-tecnologia {
+    box-shadow: none;
+  }
+
+  .tecnologia-info {
+    padding-top: 0px;
+  }
+  .tecnologia-info p {
+    margin-top: var(--spacing-16px);
+  }
+
+  .tecnologia-detalhes {
+    padding-bottom: 0px;
+  }
+  .tecnologia-info > span {
+    padding-top: 0px;
+  }
+
+  .tecnologia-info h2,
+  .tecnologia-info p {
+    max-width: max-content;
+  }
+}
+
+@media (max-width: 479.8px) {
+  .tecnologia {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  .tecnologia-info h2 {
+    max-width: 14ch;
+  }
+  .tecnologia-info p {
+    max-width: 40ch;
+  }
+
+  .tecnologia-detalhes {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-16px);
+  }
+
+  .tecnologia-detalhes div {
+    grid-template-columns: auto 1fr;
+    gap: var(--spacing-12px);
+    align-items: center;
+  }
+  .tecnologia-detalhes p {
+    grid-column: 2;
+  }
+}
