@@ -8,7 +8,7 @@
 /* Início da Main */
 
 .bicicletas-info-header {
-  padding: 30px 20px 0px 20px;
+  padding-bottom: 0;
 }
 
 .bicicleta-info {
@@ -294,9 +294,6 @@
 @media (max-width: 360px) {
   .bicicleta-escolha-img img {
     max-width: 320px;
-  }
-  .bicicletas-info-header {
-    padding: 20px 10px 0px 10px;
   }
 }
 
